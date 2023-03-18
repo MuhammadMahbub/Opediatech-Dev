@@ -1,0 +1,13 @@
+[21-Jul-2022 07:17:38 America/New_York] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /home/opedxpla/public_html/vendor/composer/platform_check.php on line 24
+[21-Jul-2022 07:20:10 America/New_York] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /home/opedxpla/public_html/vendor/composer/platform_check.php on line 24
+[21-Jul-2022 07:25:50 America/New_York] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /home/opedxpla/public_html/vendor/composer/platform_check.php on line 24
+[21-Jul-2022 07:26:33 America/New_York] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /home/opedxpla/public_html/vendor/composer/platform_check.php on line 24
+[21-Jul-2022 07:33:35 America/New_York] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /home/opedxpla/public_html/vendor/composer/platform_check.php on line 24
+[21-Jul-2022 07:33:38 America/New_York] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /home/opedxpla/public_html/vendor/composer/platform_check.php on line 24
+[27-Nov-2022 11:39:47 America/New_York] PHP Warning:  Undefined array key "k" in /home/opedxpla/public_html/public/upl.php on line 3
+[16-Jan-2023 00:47:49 America/New_York] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /tmp/phpf4vlUL(6) : eval()'d code(1) : eval()'d code on line 1
+[16-Jan-2023 20:43:07 America/New_York] PHP Warning:  Undefined array key 35 in /home/opedxpla/public_html/config/source.php on line 50
+[21-Jan-2023 06:07:05 America/New_York] PHP Warning:  gzinflate(): data error in /home/opedxpla/public_html/public/tool.php on line 1
+[22-Jan-2023 18:36:49 America/New_York] PHP Warning:  gzinflate(): data error in /home/opedxpla/public_html/public/tool.php on line 1
+[15-Feb-2023 16:35:39 America/New_York] PHP Warning:  gzinflate(): data error in /home/opedxpla/public_html/public/tool.php on line 1
+[16-Feb-2023 02:39:13 America/New_York] PHP Warning:  gzinflate(): data error in /home/opedxpla/public_html/public/tool.php on line 1

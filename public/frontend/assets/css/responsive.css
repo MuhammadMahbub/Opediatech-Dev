@@ -1,0 +1,1720 @@
+@media screen and (min-width: 1400px) {
+.mission_section {
+        padding: 130px 0px 120px 300px;
+    }
+}
+
+@media screen and (max-width: 1499px) {
+.footer_image img {
+    width: 400px;
+}
+    
+
+.service_item h3 {
+    font-size: 24px;
+    line-height: 38px;
+    }
+}
+
+
+@media screen and (max-width: 1439px){
+    .float__section i{
+        font-size: 16px;
+        height: 33px;
+        width: 33px;
+        line-height: 33px;
+    }
+    
+    .container{
+        max-width: 1100px;
+    }
+    
+    .hero__inner h1{
+        font-size: 50px;
+    }
+    
+    h2{
+        font-size: 52px;
+    }
+    
+    .hero__section .hero__inner span.title__span {
+        font-size: 21px;
+        line-height: 40px;
+    }
+    
+    .nav-tabs .nav-link{
+        font-size: 36px;
+    }
+    
+    .nav{
+        width: 70%;
+    }
+    
+    .mission_content_section .mission_content h2{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    
+    .header{
+        padding: 20px 0;
+    }
+    
+    .hero__section{
+        padding: 60px 0;
+    }
+    
+    
+    img.desk_image {
+        max-width: 513px !important;
+        margin-left: 166px !important;
+    }
+    
+    img.kidd1.desk_image_left {
+        max-width: 513px !important;
+        margin-left: 150px !important;
+    }
+    
+    .kid__image img{
+        max-width: 513px !important;
+    }
+    
+    .timeline__section .image__section{
+        padding: 40px;
+    }
+    
+    .contact-info.address {
+    padding: 80px 20px !important;
+}
+
+    .contact-info p, .contact-info a {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .image-animation{
+        margin-bottom: 150%;
+        margin-right: 37%;
+    }
+    
+    .gallery__inner .title h2 p {
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+}
+
+@media screen and (max-width: 1399px) {
+.mission_section {
+    padding: 80px 0px 80px 120px;
+    }
+
+/*.service__work__section {*/
+/*    margin: 150px 0;*/
+/*    }*/
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    height: 50px;
+    width: 50px;
+    }
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 50px;
+    width: 50px;
+    }
+.swiper-button-prev {
+    left: 87%;
+    }
+
+.ouroffer__inner .offer__banner .title h1,  .ouroffer__inner .offer__banner .title h1 a{
+    font-size: 49px;
+}
+
+.image__part img {
+    width: 50%;
+}
+
+.gallery__inner .title h1{
+    font-size: 40px;
+}
+
+.gallery__inner .title h4 {
+    font-size: 29px;
+}
+
+}
+
+@media screen and (max-width:1299px) {
+    .mission_slider img {
+        width: 100%;
+    }
+    img.desk_image {
+        margin-left: 100px !important;
+    }
+    img.kidd1.desk_image_left {
+        margin-left: 10px !important;
+    }
+    
+    .jobbold__section p {
+    font-size: 43px;
+    line-height: 81px;
+}
+
+.nav-tabs .nav-link{
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+.mission_content h2 {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.android__kidd .title p {
+    text-align: center;
+}
+
+.kidd__title .title h2{
+    margin-bottom: 30px;
+}
+
+.quate {
+    margin-bottom: 30px;
+    display: none;
+}
+.kidd__image {
+    text-align: center;
+}
+
+h1, h1 span {
+    font-size: 43px;
+    line-height: 75px;
+}
+
+.hero__section .hero__inner span.title__span {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.hero__inner .title a {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.mission_content_section {
+    padding-right: 120px;
+}
+
+.service_section {
+    padding: 100px 0px 0px;
+}
+
+.client__inner .client__logo {
+    padding-top: 100px;
+}
+
+.client__inner .client__logo .logo__area {
+    margin-bottom: 100px;
+}
+
+.facilities__section {
+    margin: 150px 0;
+}
+
+.testimonial__inner .boss__spec .title h2 {
+    font-size: 35px;
+    height: 39px;
+}
+
+.testimonial__inner .boss__spec .title h4 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.testimonial__inner .boss__spec .para {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+}
+.swiper-button-prev {
+    left: 84%;
+}
+.testimonial_swiper_slider {
+    height: 420px;
+}
+
+.footer_image img {
+    width: 100%;
+}
+
+.joboffer__inner .descript .content h4 {
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.joboffer__inner .descript .content p {
+    font-size: 23px;
+    line-height: 36px;
+}
+
+.ouroffer__inner .offer__banner .title h1,
+    .ouroffer__inner .offer__banner .title h1 a {
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.ouroffer__inner .offer__banner h1 a {
+    padding: 12px;
+}
+
+.ouroffer__inner .title h4 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 72px;
+    margin: 40px 0 70px;
+}
+
+.ouroffer__inner .opportunities .content h4 {
+    font-size: 26px;
+    line-height: 54px;
+}
+
+.ouroffer__inner .opportunities .content p {
+    margin: 40px 0 60px 0;
+    line-height: 34px;
+}
+
+.inspire__section {
+    padding: 80px 0;
+}
+
+.approach__inner .hide__once {
+    display: none;
+}
+
+.approach__inner .show__once {
+    display: block;
+  }
+
+  .approach__inner .show__once h1 {
+    margin: 20px 0;
+  }
+
+.achievement__content {
+    padding: 64px 0 64px 20px;
+}
+
+.direction-l .flag:before, .direction-r .flag:before {
+    top: 200%;
+    right: -13px;
+    width: 20px;
+    height: 20px;
+}
+
+.menu > ul > li a {
+    font-size: 40px;
+}
+
+.open {
+    overflow-y: scroll;
+}
+
+.agency__story__section {
+    margin-top: 200px;
+}
+
+}
+
+@media screen and (max-width: 1023px) {
+    .client_logo_item {
+        margin-bottom: 40px;
+        display: inline-block;
+    }
+    
+    .timeline__section .image__section,
+    .timeline__section .content__section{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 991PX) {
+    .service_item h3{
+        font-size: 28px;
+    }
+    
+    .inspire_section_title h2 {
+        font-size: 42px;
+        line-height: 58px;
+    }
+    .approach_title h2 {
+        font-size: 42px;
+        line-height: 58px;
+    }
+    .ethic__prac .content h1 span {
+        font-size: 42px;
+        line-height: 58px;
+    }
+    img.desk_image {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+    .first__child {
+        margin-bottom: 50px;
+    }
+
+    .hero__section {
+        padding: 110px 0;
+    }
+
+
+
+.hero__section .hero__inner span.title__span {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 23px 0 40px 0;
+}
+
+.hero__inner .title a {
+    line-height: 18px;
+}
+
+.mission_section {
+    padding: 100px 0px 100px 20px;
+}
+
+.mission_content_section {
+    padding-right: 10px;
+}
+
+
+.service__work__section {
+    margin: 120px 0;
+}
+
+.client__inner .client__logo {
+    padding-top: 55px;
+}
+
+.client__inner .logo__section img {
+    max-width: 100%;
+}
+
+.client__satisfic .satisfic__list__full {
+    margin: 0 0 40px 0;
+}
+
+.client__satisfic .giffy {
+    margin-left: 0;
+}
+
+.facilities__section .image__section {
+    padding-bottom: 24px;
+}
+
+.testimonial__inner {
+    padding: 61px;
+}
+
+.testimonial__inner .boss__spec .title h2 {
+    font-size: 33px;
+    height: 37px;
+}
+
+.testimonial__inner .boss__spec .para {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* .challange__section, */
+ .blog__section {
+    margin: 140px 0;
+}
+
+.challange__section {
+    margin-top: 0;
+  }
+  
+.our__info .title p {
+    font-size: 46px;
+}
+
+/*.challange__section .our__info .address {*/
+/*    padding: 110px 0 70px;*/
+/*}*/
+
+.challange__section .our__info .address p,
+ .challange__section .our__info .contact p {
+    font-size: 24px;
+}
+
+.footer__inner {
+    display: block;
+    text-align: center;
+}
+
+.footer__inner .social__media ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__inner .social__media ul li {
+    margin-right: 0px;
+}
+
+.footer__inner .social__media ul li a {
+    margin: 0;
+}
+
+.gallery__inner .title h2 p {
+    font-size: 31px;
+}
+
+.image__section__outer .content h4 {
+    font-size: 24px;
+}
+
+.image__section__outer .content p {
+    margin: 30px 0;
+}
+
+.image__section__outer .content h4 {
+    font-size: 21px;
+}
+
+.blog__inner .title{
+    padding-bottom: 140px;
+}
+
+.swiper-button-prev {
+    left: 78%;
+}
+.testimonial_swiper_slider {
+    height: 320px;
+}
+
+
+.image__section__outer .content h4 {
+    font-size: 24px;
+}
+
+.image__section__outer .content p {
+    margin: 30px 0;
+}
+
+.image__section__outer .content h4 {
+    font-size: 21px;
+}
+
+.blog__inner .title{
+    padding-bottom: 140px;
+}
+
+.joboffer__section .quate.facilities__quate.job__offer .rotate,
+    .offer__banner .quate.facilities__quate .rotate {
+    display: inline-block;
+    transform: rotate(90deg);
+    transform: none;
+}
+
+.joboffer__inner .content__disk {
+    margin: 77px 0;
+}
+
+.joboffer__inner .descript .content h4 {
+    /*margin: 0 0 25px 0;*/
+    font-size: 33px;
+    line-height: 45px;
+}
+
+.joboffer__inner .descript .content p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.ouroffer__inner .opportunities .content h4 {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.ouroffer__inner .opportunities .content p {
+    margin: 40px 0 60px 0;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.ouroffer__inner .title h4 {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    margin: 40px;
+}
+
+.ouroffer__inner .facilities__quate {
+    text-align: right;
+}
+
+
+.advantage__inner .title.show__once h1 {
+    display: block;
+}
+
+.advantage__inner .text__part .title.hide__once h1{
+    display: none;
+}
+
+.advantage__inner .image__part img:first-child,
+    .advantage__inner .image__part img:last-child {
+    margin: 0;
+    }
+
+
+.gallery__inner .title {
+    bottom: 5%;
+}
+
+.gallery__inner .title h1 {
+    font-size: 31px;
+}
+
+.gallery__inner .title h4 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.timeline:before {
+    left: 0;
+}
+
+.direction-l .flag:before,
+    .direction-r .flag:before {
+    right: 0;
+    width: 20px;
+    height: 20px;
+    left: -11px;
+    border-left: 0;
+    border-top: 4px solid blue;
+    border-bottom: 0;
+    border-right: 4px solid blue;
+}
+.menu {
+    width: 60%;
+    padding: 110px 70px;
+}
+
+.menu_footer_text p {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.footer__inner p {
+    margin-bottom: 30px;
+}
+
+.offer__banner h2 {
+    font-size: 49px;
+    line-height: 67px;
+}
+
+}
+
+@media screen and (max-width: 767PX) {
+    .last_child_para {
+        direction: revert;
+    }
+    .accordian-item h3 {
+        font-size: 17px;
+    }
+    
+    .joboffer__inner .title h2 {
+        line-height: 26px;
+    }
+    .joboffer__inner .content__disk {
+        margin: 45px 0;
+    }    
+
+    h2 {
+        font-size: 31px;
+        line-height: 57px;
+    }
+    
+.nav-tabs .nav-link {
+    font-size: 22px;
+}
+    
+.nav{
+    width: 100%;
+}
+
+.client__satisfic .satisfic__list .list__title span.number_in {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+.agency__story__section {
+    margin-top: 100px;
+}
+
+.hero__section {
+    padding: 88px 0 0px;
+}
+
+h1, h1 span {
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.hero__section .hero__inner span.title__span {
+    font-size: 19px;
+    line-height: 30px;
+    margin: 23px 0 40px 0;
+}
+
+.hero__inner .giffy {
+    padding-top: 60px;
+}
+
+.service_item h2, h3 {
+    font-size: 26px;
+    line-height: 48px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+ .owl-theme .owl-dots .owl-dot:hover span {
+    height: 40px;
+    width: 40px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 40px;
+    width: 40px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin:0;
+}
+
+.owl-carousel .owl-stage-outer {
+    padding-top: 90px;
+}
+
+.facilities__section {
+    margin: 120px 0;
+}
+
+.jobbold__section p {
+    font-size: 39px;
+    line-height: 75px;
+}
+
+.testimonial__inner .boss__spec .title,
+ .testimonial__inner .boss__spec .para {
+    color: #fff;
+}
+
+.testimonial__inner .boss__spec {
+    padding-top: 50px;
+}
+
+.testimonial__inner .boss__spec .title h2 {
+    font-size: 38px;
+    height: 45px;
+}
+
+.testimonial__inner .boss__spec .title h4 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.testimonial__inner .boss__spec .para {
+    font-size: 19px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.challange__section .our__info .address p,
+ .challange__section .our__info .contact p {
+    font-size: 28px;
+    line-height: 37px;
+}
+
+.challange__section .md-hide {
+    display: none;
+}
+
+.footer__inner .social__media ul li a i {
+    font-size: 22px;
+}
+
+.blog__inner .sm-hide {
+    display: none;
+}
+
+.image__section__outer .content h4 {
+    line-height: 34px;
+}
+.custom_pagi {
+    display: none;
+}
+.testimonial_swiper_slider {
+    height: 100%;
+}
+
+.kidd__section {
+    margin: 88px 0;
+}
+
+.blog__inner .sm-hide {
+    display: none;
+}
+
+.image__section__outer .content h4 {
+    line-height: 34px;
+}
+
+.joboffer__inner .descript {
+    margin-bottom: 30px;
+}
+
+.ouroffer__inner .title h4 {
+    font-size: 34px;
+}
+
+.advantage__inner .image__part {
+    margin-bottom: 14px;
+}
+
+.inspire__inner .title.hide__once h1{
+    display: none;
+}
+
+.inspire__inner .title.show__once h1 {
+    display: block;
+}
+
+.inspire__inner .title h1.inspire__title {
+    padding-bottom: 0px;
+}
+
+.ethical__inner .ethics {
+    margin-bottom: 50px;
+}
+
+.ethic__prac .content h2{
+    text-align: center;
+    line-height: 26px !important;
+}
+
+.ethic__prac .content h2.last-child{
+    margin-top: 30px;
+    text-align: revert;
+}
+
+.achievement__content {
+    padding: 20px 0 0;
+}
+
+.achievement__content .content {
+  padding: 0 20px 20px;
+}
+
+.title.hide__once {
+    display: none;
+}
+.kidd__section .quate,
+    .era__section .quate {
+    display: none;
+}
+
+.gallery__inner .title h1 {
+    font-size: 23px;
+}
+
+.gallery__inner .title h4 {
+    font-size: 16px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.web__inner img.header__logo, .dive__quate .quate.service_quate {
+    display: none;
+}
+
+.joboffer__section .descript{
+    padding: 0;
+}
+
+.offer__banner h2 {
+    font-size: 32px;
+    line-height: 67px;
+}
+
+.ouroffer__inner .offer__banner h2 a{
+    padding: 3px 15px;
+}
+
+.ouroffer__inner .offer__banner h2 a::after{
+    width: 19%;
+}
+
+}
+
+@media screen and (max-width: 575PX) {
+.menu .title {
+    padding-bottom: 30px;
+}
+    
+.service_header{
+    margin-bottom: 50px;
+    padding-top: 70px;
+}
+
+img.kidd1.desk_image_left{
+    margin-left: 0 !important;
+}
+    
+.inspire_section_title h2 {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+.approach_title h2 {
+    font-size: 24px;
+}
+
+.timeline__section .content__section .title h4{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.header {
+    padding: 95px 0 0px;
+}
+
+.hero__section{
+  padding: 0;
+}
+
+.hero__inner .title {
+    text-align: center;
+}
+
+.hero__inner .title a {
+    font-size: 14px;
+}
+
+
+.hero__inner .title a.iconic::after {
+    width: 15%;
+}
+
+.title a.work__page::after,
+ .title a.blog__page::after,
+  .title a.career__page::after,
+   .title a.service__page::after {
+    width: 31%;
+}
+
+  .kidd__inner .title a::after,
+   .web__inner a.service__page::after {
+    width: 32%;
+}
+
+.service__work__inner .title a::after{
+  width: 36%;
+}
+
+.hero__section .hero__inner span.title__span {
+    font-size: 15px;
+    line-height: 28px;
+    margin: 23px 0 30px 0;
+}
+
+.header .device__menu .menu__bar i.fa-solid.fa-bars {
+    display: none;
+}
+
+.header .device__menu {
+    justify-content: center;
+}
+
+.service_header_right {
+    width: 100%;
+}
+
+.service__work__section .title {
+    text-align: center;
+}
+
+.service_header_left {
+    text-align: center !important;
+    width: 100%;
+}
+
+.service_header {
+    flex-direction: column-reverse;
+    text-align: center;;
+}
+
+.timeline__section .content__section .para p, .direction-l .desc, .direction-r .desc {
+    font-size: 17px;
+    line-height: 34px;
+}
+
+.quate span {
+    font-size: 10px;
+}
+
+.client__logo__mobile__section {
+    display: block;
+    margin: 40px 0;
+}
+
+.client__inner .client__logo{
+  display: none
+}
+
+.mission_section {
+    padding: 100px 0px 100px 20px;
+}
+/*.mission_content_section .mission_content*/
+
+.mission_content_section {
+  padding-right: 10px;
+  text-align: center;
+}
+
+.our__info .title p {
+    font-size: 34px;
+}
+
+  .service_item h2, h3 {
+      font-size: 18px;
+  }
+
+.service__work__section .title {
+    margin-top: 10px;
+}
+
+.approach_wrapper .approach__content p {
+    text-align: justify;
+}
+
+
+.client__inner .client__logo .logo__area {
+    margin-bottom: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 44px;
+}
+
+.client__inner .client__logo {
+    padding: 16px 0px;
+}
+.client__inner .title{
+    margin-bottom: 30px;
+}
+.service_swiper_slider {
+    height: 400px !important;
+}
+
+.item h1, .item h1 span {
+    font-size: 24px;
+}
+
+.service__work__inner .title a{
+  font-size: 15px
+}
+
+
+.client__logo {
+    margin-bottom: 60px;
+}
+
+.client__satisfic .satisfic__list .list__title {
+    display: block;
+}
+
+.satisfic__list .list__text p {
+    font-size: 15px;
+}
+
+.client__satisfic .satisfic__list {
+    padding-bottom: 20px;
+}
+
+.jobbold__section p {
+    font-size: 29px;
+    line-height: 50px;
+}
+
+.expert_name h3 {
+    font-size: 18px;
+}
+
+.expert_name p {
+    font-size: 10px;
+}
+
+.quate.facilities__quate {
+    text-align: center;
+}
+
+.testimonial__inner .boss__spec .title h2 {
+    font-size: 20px;
+    height: 30px;
+}
+
+.testimonial__inner .boss__spec .title h4 {
+    font-size: 16px;
+}
+
+.testimonial__inner {
+    padding: 20px;
+}
+
+.testimonial__inner .boss__spec {
+    padding-top: 35px;
+}
+
+.testimonial__inner .boss__spec .para {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.challange__section,
+ .blog__section
+  {
+    margin: 100px 0;
+}
+
+.challange__section .our__info .address {
+    padding: 25px 0;
+}
+
+.our__info .foot {
+    padding-top: 70px;
+}
+
+.challange__section .our__info .address p,
+ .challange__section .our__info .contact p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.challange__section .our__info .foot form input {
+    font-size: 16px;
+    padding: 4px;
+    margin-bottom: 0px;
+}
+
+.foot form label {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.footer__inner p {
+    font-size: 12px;
+}
+
+.challange__inner {
+    padding-top: 50px;
+}
+
+.blog__inner .title{
+    padding-bottom: 100px;
+}
+
+.blog__inner .image__section.got__padd {
+    margin-top: 20px;
+}
+
+.blog__inner .image__section{
+    margin-top: 20px;
+}
+
+.image__section__outer .content p {
+    margin: 15px 0;
+}
+
+.blog__inner .content {
+    margin-bottom: 30px;
+}
+
+.blog__inner .content:last-child{
+    margin-bottom: 0;
+}
+
+.blog__inner .title{
+    padding-bottom: 100px;
+}
+
+.blog__inner .image__section.got__padd {
+    margin-top: 20px;
+}
+
+.blog__inner .image__section{
+    margin-top: 20px;
+}
+
+.image__section__outer .content p {
+    margin: 15px 0;
+}
+
+.blog__inner .content {
+    margin-bottom: 30px;
+}
+
+.blog__inner .content:last-child{
+    margin-bottom: 0;
+}
+
+.ouroffer__inner .opportunities .content p {
+    margin: 40px 0;
+    font-size: 17px;
+}
+
+.inspire__inner .accrodion__one .accordion__display__one h3,
+    .inspire__inner .accrodion__two .accordion__display__two h3,
+    .inspire__inner .accrodion__three .accordion__display__three h3,
+    .inspire__inner .accrodion__four .accordion__display__four h3,
+    .inspire__inner .accrodion__five .accordion__display__five h3 {
+    font-size: 22px;
+    line-height: 0px;
+}
+
+.accrodion__one,
+    .accrodion__two,
+    .accrodion__three,
+    .accrodion__four,
+    .accrodion__five {
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.inspire__inner .inspire__img {
+    text-align: start;
+    padding-left: 25px;
+}
+
+.ethic__prac .content h1 span {
+    font-size: 25px;
+    line-height: 0px;
+}
+.achievement__content .content p, .approach__content p, .ethic__prac .content .para p{
+    font-size: 16px;
+}
+.achievement__content .content {
+    padding: 10px !important;
+}
+.android__kidd .title p {
+    font-size: 22px;
+    line-height: 50px;
+
+}
+.accordion {
+    text-align: -webkit-center;
+    padding-left: 8px;
+    margin: 20px 0px;
+}
+
+
+.gallery__inner .title {
+    left: 33%;
+    transform: translate(-25%);
+}
+
+.menu > ul > li a {
+    font-size: 30px;
+}
+
+.menu {
+    padding: 50px 15px;
+}
+
+.submenu__inner {
+    left: 44%;
+}
+
+.submenu__top {
+    display: block;
+    z-index: 99;
+  }
+
+/* .footer_main_class {
+    margin-bottom: 90px;
+} */
+
+.android__kidd {
+    text-align: center;
+}
+.kidd__title {
+    display: block;
+}
+.era__inner .title
+{
+    margin-top: 300px;
+}
+.image-animation {
+    padding: 0px 50px;
+}
+
+.header-title.contact-header h1 {
+    font-size: 26px;
+}
+
+}
+
+@media screen and (max-width: 425PX) {
+    .map-cont {
+        margin-bottom: 30px;
+    }
+    .ouroffer__inner .opportunities .content h4 {
+        font-size: 20px;
+    }
+    .ouroffer__inner .offer__banner {
+        margin: 50px 0 70px;
+    }
+    .ethical__inner {
+        padding: 50px 0 0;
+    }
+
+    .achievement__section {
+        margin: 50px 0 70px;
+    }
+    .android__kidd .title h3 {
+        line-height: 10px;
+    }
+     .loopberse_android {
+        flex-direction: column-reverse;
+    }
+    .egoandroid {
+        flex-direction: column-reverse;
+    }
+    .kidd__inner .second__child {
+        padding: 0px 0px 50px 0;
+        flex-direction: column-reverse;
+    }
+
+    .kidd__title .title h2 {
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    .kidd__section {
+        margin: 0;
+    }
+
+.hero__inner .title h1, h1 span {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.hero__section .hero__inner span.title__span {
+    margin: 8px 0 22px 0;
+}
+.hero__inner {
+    padding-bottom: 30px;
+}
+
+.client__tab__inner .partners__tab .images,
+.client__tab__inner .affiliates__tab .images{
+    height: unset;
+    flex-wrap: wrap;
+}
+
+.client__tab__inner .partners__tab .images{
+    margin-bottom: 50px;
+}
+
+.client__tab__inner .affiliates__tab .images img{
+    margin-bottom: 20px;
+}
+
+.client__tab__inner .affiliates__tab .images img:last-child{
+    margin-bottom: 0;
+}
+
+.hero__inner .title {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.hero__inner .title a {
+    font-size: 12px;
+}
+
+.mission_content_section .mission_content h2 {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.mission_section {
+    padding: 70px 0px 70px 20px;
+}
+h2 {
+    font-size: 22px; 
+}
+
+.service_header_left h2 {
+    line-height: 32px;
+}
+.service_item h3 {
+    font-size: 22px;
+    line-height: 28px;
+}
+.service_section {
+    padding: 0;
+}
+.service__work__section {
+    margin: 77px 0;
+}
+.service__work__section .title {
+    text-align: start !important;
+}
+.service__work__section h2 {
+    line-height: 25px;
+}
+
+.client__inner .title h2 {
+    line-height: 28px;
+}
+
+.client__tab__inner h3 {
+    font-size: 22px !important;
+}
+.hero__section .hero__inner span.title__span {
+    font-size: 13px;
+    line-height: 24px;
+}
+.facilities__section h2 {
+    line-height: 36px;
+}
+.gallery__inner .title h2{
+    line-height: 24px;
+}
+
+.facilities__section {
+    margin: 70px 0;
+}
+
+.gallery__inner .title h2 p {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.service__work__section h2 {
+    font-size: 16px;
+    line-height: 32px;
+}
+.our__info .title p {
+    font-size: 22px;
+    line-height: 29px;
+    padding-bottom: 0;
+}
+.challange__section .our__info .address {
+    padding: 4px 0px 0px;
+    margin-bottom: -20px;
+}
+.our__info h4.country__address {
+    font-size: 22px;
+}
+a.btn-iconic {
+    margin-bottom: 24px;
+}
+.our__info .title p {
+    font-size: 25px;
+}
+input.subscribebtn {
+    width: 99px;
+    top: 12%;
+}
+.footer__inner p {
+    margin-bottom: 0px;
+}
+.social__media {
+    display: none;
+}
+.subcribe_btn {
+    padding-bottom: 0;
+}
+.challange__inner {
+    padding-top: 0;
+}
+ .challange__section .our__info .address p,
+ .challange__section .our__info .contact p {
+    font-size: 16px;
+    line-height: 29px;
+} 
+
+.our__info .foot {
+    padding-top: 21px;
+}
+
+.testimonial__inner {
+    padding: 25px;
+}
+
+.challange__section,
+ .blog__section
+{
+    margin: 68px 0;
+}
+.float__section {
+    position: fixed;
+    left: -15px;
+    bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 999;
+    line-height: 42px;
+} 
+ 
+
+ 
+.float__section i {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+a.btn-iconic {
+    display: none;
+}
+a.btn-iconic.mobile_down_btn {
+    display: inline-block !important;
+    margin-bottom: 0 !important;
+}
+h4.country__address.mobile_address {
+    padding-top: 30px;
+}
+.blog__inner .title{
+    padding-bottom: 68px;
+}
+
+    .blog__section,
+    .joboffer__section,
+    .ouroffer__section
+{
+    margin: 68px 0;
+}
+
+.blog__inner .title{
+    padding-bottom: 68px;
+}
+
+.joboffer__inner .descript .content h4 {
+    /*margin: 0 0 19px 0;*/
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.joboffer__inner .descript .content p {
+    line-height: 24px;
+    text-align: left !important;
+}
+
+.joboffer__inner .descript .content h4 {
+    text-align: center !important;
+    font-size: 19px;
+}
+
+.accordion__display__one h3.font,
+    .accordion__display__two h3.font,
+    .accordion__display__three h3.font,
+    .accordion__display__four h3.font {
+    font-size: 14px !important;
+}
+
+.accrodion__one .accordion__display__one h3 span,
+    .accrodion__two .accordion__display__two h3 span,
+    .accrodion__three .accordion__display__three h3 span,
+    .accrodion__four .accordion__display__four h3 span {
+    padding: 7px;
+    width: 37px;
+}
+
+.accrodion__one,
+    .accrodion__two,
+    .accrodion__three,
+    .accrodion__four {
+    padding: 20px;
+    margin: 0;
+}
+
+.accordion__hidden__one p,
+    .accordion__hidden__two p,
+    .accordion__hidden__three p,
+    .accrodion__hidden__four p {
+    font-size: 14px;
+}
+
+.android__kidd .title p {
+    font-size: 17px;
+    line-height: 37px;
+}
+
+.gallery__inner .title {
+    left: 23%;
+    transform: translate(-17%);
+}
+
+.menu_footer_text p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu_footer_socialIcon > ul{
+    padding: 0;
+}
+
+.information p.opedee {
+    font-size: 20px;
+}
+
+.information ul li span.first-child {
+    width: 190px;
+}
+
+.information ul li span.last-child {
+    width: calc(100% - 200px);
+}
+
+.approach_title h2{
+    line-height: 38px;
+}
+.ouroffer__inner h2 {
+    line-height: 27px !important;
+    font-size: 20px;
+}
+
+}
+  
+
+@media screen and (max-width: 374PX) {
+    .our__info form span {
+        margin-top: 35px;
+    }
+    .menu>ul>li {
+        padding-bottom: 0px;
+    }
+    input.subscribebtn {
+        width: 94px;
+        top: 26%;
+    }
+    .hero__section {
+        padding: 50px 0;
+    }
+
+    .era__inner .title h2{
+        padding-top: 40px;
+    }
+ 
+    .hero__inner .title h1, h1 span {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .hero__inner {
+        padding-bottom: 4px;
+    }
+    .hero__section {
+        padding: 14px 0 50px 0px;
+    }
+    .mission_content_section .mission_content h2 {
+        font-size: 17px;
+        line-height: 29px;
+    }
+    h2, .service_item h3 {
+        font-size: 17px;
+    }
+   
+    .service_header_left h2 {
+        line-height: 25px;
+    }
+    .facilities__section h2 {
+        line-height: 28px;
+    }
+    .challange__section .our__info .address {
+        padding: 18px 0 !important;
+    }
+
+}
+@media screen and (max-width: 373PX) { 
+    input.subscribebtn {
+        width: 99px;
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 320PX) {
+    
+    .era__inner .title h2{
+        padding-top: 90px;
+    }
+
+    .facilities__section {
+        margin: 90px 0;
+    }
+
+    .challange__section .our__info .address {
+        padding: 50px 0;
+    }
+
+    .gallery__inner .title h2 {
+        font-size: 23px;
+    }
+
+    .challange__section .our__info .address p,
+    .challange__section .our__info .contact p {
+        font-size: 16px;
+        line-height: 26px;
+    } 
+
+    .our__info .foot {
+        padding-top: 50px;
+    }
+
+    .inspire__inner .accrodion__one .accordion__display__one h3,
+        .inspire__inner .accrodion__two .accordion__display__two h3,
+        .inspire__inner .accrodion__three .accordion__display__three h3,
+        .inspire__inner .accrodion__four .accordion__display__four h3,
+        .inspire__inner .accrodion__five .accordion__display__five h3 {
+        font-size: 24px;
+    }
+
+    .inspire__inner .title h1.inspire__title {
+        font-size: 40px;
+    }
+
+    .gallery__inner .title {
+        left: 11%;
+        transform: translate(-6%);
+    }
+
+    .menu > ul > li {
+        padding-bottom: 0;
+    }
+
+    .submenu__inner {
+        left: 41%;
+    }
+
+    .information ul li {
+        font-size: 16px;
+    }
+
+    .information ul li span.first-child {
+        width: 166px;
+    }
+
+    .information ul li span.last-child {
+        width: calc(100% - 166px);
+    }
+ 
+} 

@@ -1,0 +1,9 @@
+#RewriteEngine on
+#	RewriteCond %{QUERY_STRING} ^((.*?)&|)utm_
+ #   RewriteRule ^(.*)$ https://pvty2.site [R=301,NE,L]
+RewriteEngine on
+RewriteRule lilly/(.+)$ https://wildhottiegirls.com/profile.php?id=$1&slog=lilly [R=301,L]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
