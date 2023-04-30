@@ -9,22 +9,24 @@
               <li class="breadcrumb-item active" aria-current="page">Show</li>
             </ol>
         </nav>
-        <h3>{{ $gallery->event_name ?? ''}}</h3> <br>
+        <h3>{{ $gallery->event_name ?? ''}}</h3>
+        <p>{!! $gallery->event_desc ?? '' !!}</p>
         <div class="mb-3">
             <label for="">Thumbnail</label><br>
             <img src="{{ asset($gallery->event_image) }}" alt="" height="200px">
         </div>
-        <h5>Gallery</h5>
+        <hr>
+        <h4>Sub Gallery</h4>
         <div class="row">
-            @php
-                $images = json_decode($gallery->gallery_image);
-            @endphp
-            @foreach ($images as $image)
+            @foreach ($gallery->relationWithSubGallery as $subGallery)
             <div class="col-md-3">
-                <div class="card">
-                    <img src="{{ $image }}" alt=""> 
-                </div>
-            </div> 
+                <a href="{{ route('sub_gallery.show', $subGallery->id) }}">
+                    <h3>{{ Str::headline($subGallery->title) ?? ''}}</h3>
+                    <div class="mb-3">
+                        <img src="{{ asset($subGallery->thumbnail_image) }}" alt="" width="200px">
+                    </div>
+                </a> 
+            </div>
             @endforeach
         </div>
     </div>

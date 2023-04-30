@@ -10,4 +10,8 @@ class Gallery extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+    public function relationWithSubGallery()
+    {
+        return $this->hasMany(SubGallery::class, 'gallery_id');
+    }
 }

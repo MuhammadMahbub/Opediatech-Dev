@@ -192,9 +192,11 @@
                             {{-- Gallery --}}
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Gallery </span> <span class="menu-arrow"></span></a>
-                                <ul class="nav-second-level collapse" aria-expanded="false">
-                                    <li><a href="{{ route('gallery.create') }}">{{ __('Add Gallery') }}</a></li>
-                                    <li><a href="{{ route('gallery.index') }}">{{ __('List Gallery') }}</a></li>
+                                <ul class="nav-second-level collapse {{ Request::routeIs(['gallery*','sub_gallery*']) ? 'in' : '' }}" aria-expanded="false">
+                                    {{-- <li><a href="{{ route('gallery.create') }}">{{ __('Add Gallery') }}</a></li> --}}
+                                    <li class="{{ Request::routeIs('gallery*') ? 'active' : '' }}"><a href="{{ route('gallery.index') }}">{{ __('List Gallery') }}</a></li>
+                                    {{-- <li><a href="{{ route('sub_gallery.create') }}">{{ __('Add Sub Gallery') }}</a></li> --}}
+                                    <li class="{{ Request::routeIs('sub_gallery*') ? 'active' : '' }}"><a href="{{ route('sub_gallery.index') }}">{{ __('List Sub Gallery') }}</a></li>
                                 </ul>
                             </li>
                             {{-- Gallery --}}

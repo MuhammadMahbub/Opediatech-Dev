@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Models\Contact;
 use App\Models\Gallery;
+use App\Models\MultipleImage;
+use App\Models\SubGallery;
 
 class PageController extends Controller
 {
@@ -27,11 +29,19 @@ class PageController extends Controller
         return view('layouts.frontend.pages.gallery', compact('galleries'));
     }
 
+    public function subGalleryPage($slug)
+    {
+        $gallery = Gallery::where('slug',$slug)->first();
+        $subGalleries = SubGallery::where('gallery_id', $gallery->id)->get();
+        return view('layouts.frontend.pages.subGallery', compact('gallery','subGalleries'));
+    }
+
     public function galleryDetails($slug)
     {
-
-        $slugwiseimage = Gallery::where('slug', $slug)->first();
-        return view('layouts.frontend.pages.gallery-details', compact('slugwiseimage'));       
+        // return $slug;
+        $subGallery = SubGallery::where('slug',$slug)->first();
+        $multipleImage = MultipleImage::where('sub_gallery_id', $subGallery->id)->get();
+        return view('layouts.frontend.pages.gallery-details', compact('subGallery','multipleImage'));       
     }
 
 
@@ -64,7 +74,7 @@ class PageController extends Controller
                 'message'=> $request->message,
                 'created_at'=>Carbon::now()
             ]);
-            return back()->with('success', 'Your message is submitted succesfully!');;
+            return back()->with('success', 'Your message is submitted succesfully!');
     }
 
 

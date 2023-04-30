@@ -23,8 +23,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-10 m-auto">
                         <div class="title">
-                            <h1 class="event_title">{{ $slugwiseimage->event_name }}</h1> 
-                            <span class="title__span" style="margin:25px 0 50px 0">{{ $slugwiseimage->event_desc }}</span>
+                            <h1 class="event_title">{{ $subGallery->title }}</h1> 
+                            <span class="title__span" style="margin:25px 0 50px 0">{!! $subGallery->description !!}</span>
                         </div>
                     </div> 
                 </div>
@@ -33,9 +33,9 @@
     </div>
     <!-- hero section end here -->
  
-    <div class="container">
-        <a class="gallery_back_btn" href="{{ route('galleryPage.index') }}">Back Gallery</a>
-    </div>
+    {{-- <div class="container">
+        <a class="gallery_back_btn" href="{{ route('subgalleryPage',$slug) }}">Back Sub Gallery</a>
+    </div> --}}
  
   
     <!-- gallery section start here -->
@@ -43,14 +43,11 @@
         <div class="container">
             <div class="gallery__inner_section">
                 <div class="tz-gallery">
-                    <div class="row">
-                        @php
-                            $images = json_decode($slugwiseimage->gallery_image)
-                        @endphp
-                        @foreach ($images as $image)
+                    <div class="row mb-5">
+                        @foreach ($multipleImage as $images)
                         <div class="col-sm-12 col-md-4">
-                            <a class="lightbox" href="{{ $image }}">
-                                <img width="100%" src="{{ $image }}" alt="Bridge">
+                            <a class="lightbox" href="{{ asset($images->image) }}">
+                                <img width="100%" src="{{ asset($images->image) }}" alt="Bridge">
                             </a>
                         </div>
                         @endforeach 

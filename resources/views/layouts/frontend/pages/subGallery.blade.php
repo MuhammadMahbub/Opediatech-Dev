@@ -42,7 +42,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-10 m-auto">
                         <div class="title">
-                            <h1 class="event_title">Gallery</h1> 
+                            <h1 class="event_title">{{ $gallery->event_name }}</h1> 
+                            <span class="title__span" style="margin:25px 0 50px 0">{!! $gallery->event_desc !!}</span>
                         </div>
                     </div> 
                 </div>
@@ -50,7 +51,26 @@
         </div>
     </div>
     <!-- hero section end here -->
+
+    <!-- hero section start here -->
+    {{-- <div class="hero__section">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="row align-items-center">
+                    <div class="col-md-10 m-auto">
+                        <div class="title">
+                            <h1 class="event_title">Sub Gallery</h1> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div> --}}
+    <!-- hero section end here -->
  
+    <div class="container">
+        <a class="gallery_back_btn" href="{{ route('galleryPage.index') }}">Back Gallery</a>
+    </div>
 
     <!-- Service section start here -->
     <div class="service_section">
@@ -58,12 +78,12 @@
             <div class="service_inner">
                 <div class="container">
                     <div class="row">
-                        @foreach ($galleries as $gallery)
+                        @foreach ($subGalleries as $gallery)
                         <div class="col-md-4">
-                            <a class="software__service__swiper" href="{{ route('subgalleryPage', $gallery->slug ) }}">
+                            <a class="software__service__swiper" href="{{ route('galleryPage.details', $gallery->slug ) }}">
                                 <div class="service_item gallery_item">
-                                    <img style="width: 100% !important;" src="{{ $gallery->event_image }}" alt="image">
-                                    <h3 class="event_title">{{  $gallery->event_name }}</h3>
+                                    <img style="width: 100% !important;" src="{{ asset($gallery->thumbnail_image) }}" alt="image">
+                                    <h3 class="event_title">{{  $gallery->title }}</h3>
                                 </div>
                             </a> 
                         </div> 

@@ -26,6 +26,7 @@ use App\Http\Controllers\Admin\blogDetailsController;
 use App\Http\Controllers\Admin\EmailSubscribeController;
 use App\Http\Controllers\Admin\ServiceCategoryController;
 use App\Http\Controllers\FrontEnd\FrontEndHomeController;
+use App\Http\Controllers\SubGalleryController;
 
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
@@ -106,6 +107,10 @@ Route::prefix('admin')->group(function(){
     Route::resource('gallery', GalleryController::class);
     Route::get('/gallery/delete/{id}', [GalleryController::class, 'galleryDelete'])->name('gallery.delete');
 
+    Route::resource('sub_gallery', SubGalleryController::class);
+    Route::get('sub/gallery/delete/{id}', [SubGalleryController::class, 'subGalleryDelete'])->name('sub_gallery.delete');
+    Route::post('multi/gallery/delete', [SubGalleryController::class, 'multiimageDelete'])->name('multiimageDelete');
+
 
  });
 
@@ -119,9 +124,6 @@ Route::get('/', [FrontEndHomeController::class, 'FrontIndex'])->name('index');
 
 Route::post('subscribe', [FrontEndHomeController::class, 'Subscribe'])->name('subscribe');
 
-
-
-
 Route::get('/work', [PageController::class, 'WorkPageIndex'])->name('work.index');
 Route::get('/service', [PageController::class, 'ServicePageIndex'])->name('servicepage.index');
 Route::get('/agency', [PageController::class, 'AgencyPageIndex'])->name('agency.index');
@@ -131,7 +133,9 @@ Route::get('/career', [PageController::class, 'CareerIndexPage'])->name('career.
 Route::get('/blog', [PageController::class, 'BlogIndexPage'])->name('blogpage.index');
 Route::get('/blog/show', [PageController::class, 'blogShow']);
 Route::get('/gallery', [PageController::class, 'galleryPageIndex'])->name('galleryPage.index');
+Route::get('/sub/gallery/{slug}', [PageController::class, 'subGalleryPage'])->name('subgalleryPage');
 Route::get('/gallery/details/{slug}', [PageController::class, 'galleryDetails'])->name('galleryPage.details');
+// Route::get('/return/back', [PageController::class, 'returnBack'])->name('returnBack');
 
 
 Route::get('/{slug}', [FrontEndHomeController::class, 'SingleService'])->name('single_service');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\SubGallery;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -39,11 +40,10 @@ class GalleryController extends Controller
     {
         // return $request->gallery_image;
         $request->validate([
-            'event_name' => 'required',
+            'event_name' => 'required|unique:galleries,event_name',
             'slug' => 'required',
-            'event_image' => 'required',
+            'event_image' => 'required|image',
             'event_desc' => 'required',
-            'gallery_image' => 'required',
         ]);
 
         $image = $request->file('event_image');
@@ -102,7 +102,7 @@ class GalleryController extends Controller
     {
         // return $request->gallery_image;
         $request->validate([
-            'event_name' => 'required',
+            'event_name' => 'required|unique:galleries,event_name,'.$id,
             'slug' => 'required',
             'event_desc' => 'required',
         ]);
@@ -135,7 +135,13 @@ class GalleryController extends Controller
      */
     public function galleryDelete($id)
     {
-        Gallery::findOrFail($id)->delete();
-        return back()->with('success', 'Gallery Deleted');
+        $subGallery = SubGallery::where('gallery_id',$id)->get();
+        if($subGallery){
+            return back()->with('fail', 'Sub Gallery r available in this Gallery');
+        }else{
+            Gallery::findOrFail($id)->delete();
+            return back()->with('success', 'Gallery Deleted');
+        }
+        
     }
 }

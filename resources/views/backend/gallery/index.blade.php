@@ -1,8 +1,12 @@
 @extends('layouts.backend.app')
+
 @section('content')
 <div class="row">
     <div class="card-box table-responsive">
-        <h4 class="m-t-0 header-title">Show All </h4>
+        <div class="d-flex justify-content-between">
+            <h4 class="m-t-0 header-title">Show All </h4>
+            <a href="{{ route('gallery.create') }}" class="btn btn-primary">Add Gallery</a>
+        </div>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li> 
@@ -12,13 +16,13 @@
         <div class="row">
         @foreach ($galleries as $gallery)
             <div class="col-md-3 mb-3">
-                <a href="{{ route('gallery.show', $gallery->id) }}">
-                    <div class="card">
+                <div class="card">
+                    <a href="{{ route('gallery.show', $gallery->id) }}">
                         <img src="{{ asset($gallery->event_image) }}" alt="" height="200px">
                         <h3 class="mt-3">{{ Str::headline($gallery->event_name ?? '') }}</h3>
-                        <p>{{ $gallery->event_desc }}</p>
-                    </div>
-                </a>
+                    </a>
+                    {{-- <p>{!! $gallery->event_desc !!}</p> --}}
+                </div>
                 <a href="{{route('gallery.edit', $gallery->id)}}" class="btn btn-success">Edit</a>
                 <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modaldemo8__{{$gallery->id}}">Delete</a>
         </div>
