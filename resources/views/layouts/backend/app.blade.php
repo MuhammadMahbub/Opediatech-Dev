@@ -41,7 +41,7 @@
 
                     <!-- LOGO -->
                     <div class="topbar-left">
-                        <a href="/dashboard" class="logo">
+                        <a href="/" class="logo" target="_blank">
                             <span>
                                 <img src="{{ asset('backend') }}/assets/images/logo.png" alt="" height="22">
                             </span>

@@ -78,6 +78,18 @@
                             </div>
                         </div>
                     </li>
+                    @auth
+                    <li>
+                        <div class="menu_inner_item">
+                            <div class="menu_icon_image">
+                                <img loading="lazy" src="https://opedia.mo.cloudinary.net/opediatech_images/menu/homeNew.png" alt="icon">
+                            </div>
+                            <div class="menu_link">
+                                <a href="/dashboard">Dashboard</a>
+                            </div>
+                        </div>
+                    </li>
+                    @endauth
                 </ul>
                 <!-- menu -->
                 <div class="menu_footer">
