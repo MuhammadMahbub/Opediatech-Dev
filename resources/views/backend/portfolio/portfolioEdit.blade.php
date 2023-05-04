@@ -109,7 +109,7 @@
 
                 <div class="form-group">
                     <label>Service Description</label>
-                    <textarea name="portfolio_desc" id="editor" cols="30" rows="10">{!! $data->portfolio_desc !!}</textarea>
+                    <textarea name="portfolio_desc" id="" cols="30" rows="10">{!! $data->portfolio_desc !!}</textarea>
                     @error('service_desc')
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror

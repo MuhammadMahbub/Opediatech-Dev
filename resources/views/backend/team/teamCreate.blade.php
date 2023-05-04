@@ -32,7 +32,7 @@
                     <br>
                     <img src="{{ asset('backend/assets/images/avatar.jpg') }}" id="img_id" width="200px" class="mb-3" alt="image">
                     <input type="file" name="image" onchange="document.getElementById('img_id').src=window.URL.createObjectURL(this.files[0])" class="form-control">
-                    @error('img')
+                    @error('image')
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror
                 </div>

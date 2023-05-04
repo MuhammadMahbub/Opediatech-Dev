@@ -41,11 +41,22 @@ class ServiceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ServiceMessageRequest $request)
+    public function store(Request $request)
     {
 
-
-        $request->validated();
+        $request->validate([
+            'service_title' => 'required',
+            'service_desc' => 'required',
+            'service_type' => 'required',
+            'platform_type' => 'required',
+            'project_complete' => 'required',
+            'operating_system' => 'required',
+            'work_experience' => 'required',
+            'total_clients' => 'required',
+            'color_code' => 'required',
+            'service_category_id' => 'required',
+            'service_image' => 'required|image',
+        ]);
 
         // img setting
         $file_name = $_FILES['service_image']['name'];
@@ -75,9 +86,8 @@ class ServiceController extends Controller
         $data->service_image = $last_image;
         $data->created_at = Carbon::now();
         $data->save();
-        return redirect()->back()->with('success', 'Service add success');
 
-
+        return redirect()->route('service.index')->with('success', 'Service Created Success');
 
     }
 
@@ -113,10 +123,22 @@ class ServiceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update( ServiceMessageRequest $request, $id)
+    public function update( Request $request, $id)
     {
 
-        $request->validated();
+        $request->validate([
+            'service_title' => 'required',
+            'service_desc' => 'required',
+            'service_type' => 'required',
+            'platform_type' => 'required',
+            'project_complete' => 'required',
+            'operating_system' => 'required',
+            'work_experience' => 'required',
+            'total_clients' => 'required',
+            'color_code' => 'required',
+            'service_category_id' => 'required',
+            'service_image' => 'image',
+        ]);
 
         $images = $request->file('service_image');
 
@@ -152,7 +174,8 @@ class ServiceController extends Controller
         $data->service_category_id = $request->service_category_id;
         $data->updated_at = Carbon::now();
         $data->save();
-        return back();
+
+        return redirect()->route('service.index')->with('success', 'Service Updated Success');
 
 
     }

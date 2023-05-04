@@ -78,7 +78,7 @@ class ServiceCategoryController extends Controller
             'seo_title' => $request->seo_title,
             'created_at' => Carbon::now()
         ]);
-        return redirect()->back()->with('success', 'Services Category Success');
+        return redirect()->route('serviceCategory.index')->with('success', 'Services Category Success');
 
 
 
@@ -116,8 +116,7 @@ class ServiceCategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-
+        
         $request->validate([
             'category_fname' => 'required',
             'category_lname' => 'required',
@@ -164,7 +163,7 @@ class ServiceCategoryController extends Controller
 
 
         // update data
-        return redirect()->back()->with('success', 'Services Update Success');
+        return redirect()->route('serviceCategory.index')->with('success', 'Services Update Success');
 
 
     }

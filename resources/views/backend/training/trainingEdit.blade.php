@@ -110,7 +110,7 @@
 
                 <div class="form-group">
                     <label>Training Description</label>
-                    <textarea name="description" id="editor" cols="30" rows="10">{!!$training->description!!}</textarea>
+                    <textarea name="description" id="" cols="30" rows="10">{!!$training->description!!}</textarea>
                     @error('description')
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror

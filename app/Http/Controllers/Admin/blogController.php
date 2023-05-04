@@ -43,7 +43,10 @@ class blogController extends Controller
     {
 
         $request->validate([
-            '*' => 'required'
+            'blog_image' => 'required|image',
+            'blog_title' => 'required',
+            'blog_slug' => 'required',
+            'blog_desc' => 'required'
         ],[
             'blog_title.required' => 'Blog title is required',
             'blog_slug.required' => 'Blog slug is required',
@@ -54,14 +57,17 @@ class blogController extends Controller
 
 
         // img setting
-        $images = $request->file('blog_image');
-        $img_ext = strtolower($images->getClientOriginalExtension());
-        $hex_name = hexdec(uniqid());
-        $img_name = $hex_name . '.' . $img_ext;
-        $location = 'backend/assets/images/uploads/blog/';
-        $last_image = $location. $img_name;
-        Image::make($images)->save($last_image);
+        
+        if($request->file('blog_image')){
+            $images = $request->file('blog_image');
+            $img_ext = strtolower($images->getClientOriginalExtension());
+            $hex_name = hexdec(uniqid());
+            $img_name = $hex_name . '.' . $img_ext;
+            $location = 'backend/assets/images/uploads/blog/';
+            $last_image = $location. $img_name;
+            Image::make($images)->save($last_image);
 
+        }
 
          // insert data
          $data = new blog();
@@ -71,7 +77,7 @@ class blogController extends Controller
          $data->blog_image = $last_image;
          $data->created_at = Carbon::now();
          $data->save();
-         return redirect()->back()->with('success', 'Blog add success');
+         return redirect()->route('blog.index')->with('success', 'Blog add success');
     }
 
     /**
@@ -110,7 +116,10 @@ class blogController extends Controller
 
 
         $request->validate([
-            '*' => 'required'
+            'blog_image' => 'image',
+            'blog_title' => 'required',
+            'blog_slug' => 'required',
+            'blog_desc' => 'required'
         ],[
             'blog_title.required' => 'Blog title is required',
             'blog_slug.required' => 'Blog slug is required',
@@ -144,7 +153,7 @@ class blogController extends Controller
         $data->blog_desc = $request->blog_desc;
         $data->updated_at = Carbon::now();
         $data->save();
-        return redirect()->back()->with('success', 'Blog Update success');
+        return redirect()->route('blog.index')->with('success', 'Blog Update success');
 
     }
 

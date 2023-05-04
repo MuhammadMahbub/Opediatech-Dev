@@ -28,7 +28,7 @@
                     <td>{{ $loop->index+1 }}</td>
                     <td>{{ $category->category_name }} <span style="color:red">({{ $category->relationWithPortfolio->count() }})</span></td>
                     <td>{{ $category->title }}</td>
-                    <td><img src={{ $category->img }} width="150" alt=""></td>
+                    <td><img src={{ asset($category->img) }} width="150" alt=""></td>
                     <td>{{ $category->created_at->diffForHumans() }}</td>
                       <td> <a href={{route('isFeatured',$category->id)}} class="{{$category->isFeatured==1 ? 'btn btn-primary' : 'btn btn-warning'}}">  {{$category->isFeatured==1 ? 'Featured' : 'Not Featured'}} </a> </td>
                     <td class="text-center">

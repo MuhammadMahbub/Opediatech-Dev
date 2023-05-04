@@ -105,7 +105,7 @@
 
                 <div class="form-group">
                     <label>Training Description</label>
-                    <textarea name="editor" id="editor" rows="10" cols="80">
+                    <textarea name="description" id="" class="form-control" rows="5" cols="80">
                         This is my textarea to be replaced with CKEditor 4.
                     </textarea>
                     @error('description')

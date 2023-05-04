@@ -42,30 +42,34 @@ class CategoryController extends Controller
     {
         $request->validate([
             'category_name' => 'required|unique:categories',
+            'img' => 'required|image',
         ]);
 
         // return $request->all();
 
+        $data = new Category();
+
            // img setting
-           $images = $request->file('img');
-           $img_ext = strtolower($images->getClientOriginalExtension());
-           $hex_name = hexdec(uniqid());
-           $img_name = $hex_name . '.' . $img_ext;
-           $location = 'backend/assets/images/uploads/category/';
-           $last_image = $location. $img_name;
-           Image::make($images)->save($last_image);
+           if($request->file('img')){
+            $images = $request->file('img');
+            $img_ext = strtolower($images->getClientOriginalExtension());
+            $hex_name = hexdec(uniqid());
+            $img_name = $hex_name . '.' . $img_ext;
+            $location = 'backend/assets/images/uploads/category/';
+            $last_image = $location. $img_name;
+            Image::make($images)->save($last_image);
+           }
 
            // insert
-           $data = new Category();
            $data->category_name = $request->category_name;
            $data->title = $request->title;
-           $data->img = $last_image;
            $data->category_slug = $request->category_slug;
+           $data->img = $last_image ?? "";
            $data->created_at = Carbon::now();
            $data->save();
 
         // Category::create($request->except('_token'), ['created_at' => Carbon::now()]);
-        return redirect()->back()->with('success', 'Category add success');
+        return redirect()->route('category.index')->with('success', 'Category add success');
     }
 
     /**
@@ -87,7 +91,6 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-
         $data = Category::findOrFail($id);
         return view('backend.category.editCategory', compact('data'));
 
@@ -131,7 +134,7 @@ class CategoryController extends Controller
            $data->category_slug = $request->category_slug;
            $data->updated_at = Carbon::now();
            $data->save();
-        return redirect()->back()->with('success', 'Portfolio Update Success');
+        return redirect()->route('category.index')->with('success', 'Portfolio Update Success');
     }
 
     /**

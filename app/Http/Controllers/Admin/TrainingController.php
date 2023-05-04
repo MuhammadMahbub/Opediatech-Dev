@@ -40,19 +40,29 @@ class TrainingController extends Controller
     public function store(Request $request)
     {
 
-        // $request->validate([
-        //     '*' => 'required',
-        //     'portfolio_title'=> 'required|unique:portfolios',
-        // ]);
+        $request->validate([
+            'title'=> 'required|unique:trainings',
+            'course_name' => 'required',
+            'duration' => 'required',
+            'classes' => 'required',
+            'pre_requirement' => 'required',
+            'system_config' => 'required',
+            'course_fee_online' => 'required',
+            'course_fee_offline' => 'required',
+            'description' => 'required',
+            'Featured_img'=> 'required|image',
+        ]);
 
         // img setting
-        $images = $request->file('Featured_img');
-        $img_ext = strtolower($images->getClientOriginalExtension());
-        $hex_name = hexdec(uniqid());
-        $img_name = $hex_name . '.' . $img_ext;
-        $location = 'backend/assets/images/uploads/training/';
-        $last_image = $location. $img_name;
-        Image::make($images)->save($last_image);
+        if($request->file('Featured_img')){
+            $images = $request->file('Featured_img');
+            $img_ext = strtolower($images->getClientOriginalExtension());
+            $hex_name = hexdec(uniqid());
+            $img_name = $hex_name . '.' . $img_ext;
+            $location = 'backend/assets/images/uploads/training/';
+            $last_image = $location. $img_name;
+            Image::make($images)->save($last_image);
+        }
 
         // insert
         $data = new Training();
@@ -110,8 +120,18 @@ class TrainingController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-
+        $request->validate([
+            'title'=> 'required|unique:trainings,title,'.$id,
+            'Featured_img'=> 'image',
+            'course_name' => 'required',
+            'duration' => 'required',
+            'classes' => 'required',
+            'pre_requirement' => 'required',
+            'system_config' => 'required',
+            'course_fee_online' => 'required',
+            'course_fee_offline' => 'required',
+            'description' => 'required',
+        ]);
 
         $images = $request->file('Featured_img');
 
@@ -142,10 +162,10 @@ class TrainingController extends Controller
         $data->system_config = $request->system_config;
         $data->course_fee_online = $request->course_fee_online;
         $data->course_fee_offline = $request->course_fee_offline;
-        $data->youtube_link = $request->youtube_link;
+        $data->youtube_link = $request->youtube_link ?? '';
         $data->description = $request->description;
-          $data->seo_title = $request->seo_title;
-          $data->seo_description = $request->seo_description;
+          $data->seo_title = $request->seo_title ?? '';
+          $data->seo_description = $request->seo_description ?? '';
         $data->status = $request->status;
         $data->created_at = Carbon::now();
         $data->save();

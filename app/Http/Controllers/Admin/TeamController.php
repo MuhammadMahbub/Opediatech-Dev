@@ -38,13 +38,23 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $images = $request->file('image');
-        $img_ext = strtolower($images->getClientOriginalExtension());
-        $hex_name = hexdec(uniqid());
-        $img_name = $hex_name . '.' . $img_ext;
-        $location = 'backend/assets/images/uploads/team/';
-        $last_image = $location. $img_name;
-        Image::make($images)->save($last_image);
+        $request->validate([
+            'image' => 'required|image',
+            'name' => 'required',
+            'title' => 'required',
+        ]);
+
+        if($request->file('image'))
+        {
+            $images = $request->file('image');
+            $img_ext = strtolower($images->getClientOriginalExtension());
+            $hex_name = hexdec(uniqid());
+            $img_name = $hex_name . '.' . $img_ext;
+            $location = 'backend/assets/images/uploads/team/';
+            $last_image = $location. $img_name;
+            Image::make($images)->save($last_image);
+        }
+        
 
         // insert
         $data = new Team();
@@ -53,7 +63,7 @@ class TeamController extends Controller
         $data->title = $request->title;
         $data->created_at = Carbon::now();
         $data->save();
-        return redirect()->back()->with('success', 'Member add success');
+        return redirect()->route('team.index')->with('success', 'Member add success');
     }
 
     /**
@@ -89,6 +99,12 @@ class TeamController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'image' => 'image',
+            'name' => 'required',
+            'title' => 'required',
+        ]);
+
         $images = $request->file('image');
 
         if($images != ""){
@@ -113,7 +129,7 @@ class TeamController extends Controller
         $data->title = $request->title;
         $data->updated_at = Carbon::now();
         $data->save();
-        return redirect()->back()->with('success', 'Team updated success');
+        return redirect()->route('team.index')->with('success', 'Team updated success');
     }
 
     /**

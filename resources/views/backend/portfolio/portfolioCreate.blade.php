@@ -31,9 +31,9 @@
                     @enderror
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label>Service Description</label>
-                    <textarea name="portfolio_desc" id="editor" cols="30" rows="10"></textarea>
+                    <textarea name="portfolio_desc" class="form-control" id="" cols="30" rows="5"></textarea>
                     @error('service_desc')
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror

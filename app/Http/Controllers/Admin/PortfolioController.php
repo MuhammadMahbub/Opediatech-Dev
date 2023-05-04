@@ -46,29 +46,33 @@ class PortfolioController extends Controller
         $request->validate([
             'portfolio_title'=> 'required|unique:portfolios',
             'project_name'=>'required',
-            'thambnail_image'=>'required',
+            'thambnail_image'=>'required|image',
             'category_id'=>'required'
         ]);
 
-        // img setting
+        $data = new Portfolio();
         $images = $request->file('thambnail_image');
-        $img_ext = strtolower($images->getClientOriginalExtension());
-        $hex_name = hexdec(uniqid());
-        $img_name = $hex_name . '.' . $img_ext;
-        $location = 'backend/assets/images/uploads/portfolio/';
-        $last_image = $location. $img_name;
-        Image::make($images)->save($last_image);
+
+        // img setting
+        if($images != ""){
+            $images = $request->file('thambnail_image');
+            $img_ext = strtolower($images->getClientOriginalExtension());
+            $hex_name = hexdec(uniqid());
+            $img_name = $hex_name . '.' . $img_ext;
+            $location = 'backend/assets/images/uploads/portfolio/';
+            $last_image = $location. $img_name;
+            Image::make($images)->save($last_image);
+        }
 
         // insert
-        $data = new Portfolio();
         $data->category_id = $request->category_id;
         $data->portfolio_title = $request->portfolio_title;
         $data->portfolio_desc = $request->portfolio_desc;
-        $data->thambnail_image = $last_image;
         $data->project_name = $request->project_name;
         $data->project_client = $request->project_client;
         $data->project_mode = $request->project_mode;
         $data->location = $request->location;
+        $data->thambnail_image = $last_image;
         $data->fbLink = $request->fbLink;
         $data->twLink = $request->twLink;
         $data->inLink = $request->inLink;
@@ -76,7 +80,7 @@ class PortfolioController extends Controller
         $data->portfolio_slug = Str::slug($request->portfolio_title, "-");
         $data->created_at = Carbon::now();
         $data->save();
-        return redirect()->back()->with('success', 'Portfolio add success');
+        return redirect()->route('portfolio.index')->with('success', 'Portfolio add success');
     }
 
     /**
@@ -153,7 +157,7 @@ class PortfolioController extends Controller
         $data->portfolio_slug = Str::slug($request->portfolio_title, "-");
         $data->updated_at = Carbon::now();
         $data->save();
-        return redirect()->back()->with('success', 'Portfolio Update Success');
+        return redirect()->route('portfolio.index')->with('success', 'Portfolio Update Success');
 
 
 
