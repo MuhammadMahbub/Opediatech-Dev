@@ -51,7 +51,7 @@
                     <li>
                         <div class="menu_inner_item">
                             <div class="menu_icon_image">
-                                <img loading="lazy" src="https://opedia.mo.cloudinary.net/opediatech_images/menu/service.png" alt="icon">
+                                <img loading="lazy" src="https://opedia.mo.cloudinary.net/opediatech_images/menu/agency.png" alt="icon">
                             </div>
                             <div class="menu_link">
                                 <a href="{{ route('galleryPage.index') }}">Gallery</a>

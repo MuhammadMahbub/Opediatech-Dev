@@ -1,7 +1,7 @@
 <!Doctype html>
 <html lang="en">
 <head>
-    
+    <title>Opedia Technologies Limited | Best Web and software Company</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <meta name="title" content="Opedia Technologies Limited | Best Web and software Company">
     <meta name="description" content="Our company provides businesses of all sizes with expert, affordable SEO, web, and software development services. We work out of Bangladesh and Singapore.">
     <meta name="keywords" content="professional website design agency, web and software development, digital IT solutions, custom web software development ">
+    
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -37,7 +38,7 @@
   
     <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/owl.theme.default.css">
-    <!--<link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/bootstrap.min.css">-->
+    {{-- <!--<link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/bootstrap.min.css">--> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />

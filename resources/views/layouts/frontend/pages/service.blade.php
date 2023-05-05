@@ -3,7 +3,6 @@
 <!-- banner and hero section start here -->
 <div class="banner__section">
 
-
     @include('layouts.frontend.inc.menu')
 
     <!-- hero section start here -->
