@@ -1,4 +1,4 @@
- @include('layouts.frontend.inc.header',[$seo_title="The professional web and software agency that's proven to deliver", $seo_description = "We are a professional web and software agency focused on providing high-end, cost-effective websites and software for the business around the globe."])
+ @include('layouts.frontend.inc.header',[$seo_title=SeoSettings()->agency_page_seo_title, $seo_description=SeoSettings()->agency_page_seo_description, $seo_keywords=SeoSettings()->agency_page_seo_keywords ])
 
 
     <!-- banner and hero section start here -->

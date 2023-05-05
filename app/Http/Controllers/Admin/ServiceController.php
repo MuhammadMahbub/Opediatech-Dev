@@ -125,7 +125,6 @@ class ServiceController extends Controller
      */
     public function update( Request $request, $id)
     {
-
         $request->validate([
             'service_title' => 'required',
             'service_desc' => 'required',

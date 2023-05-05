@@ -1,4 +1,8 @@
-@include('layouts.frontend.inc.header',[$seo_title="An digital service company enables IT for the future", $seo_description = "We adopted changes spontaneously as a result of the evolving digital service company revolution. We provide assistance in light of the remaining time. "])
+@include('layouts.frontend.inc.header',[
+    $seo_title=SeoSettings()->gallery_page_seo_title.' | '.$gallery->event_name.' | '.$subGallery->title, 
+    $seo_description=SeoSettings()->gallery_page_seo_description, 
+    $seo_keywords=SeoSettings()->gallery_page_seo_keywords
+])
 
 <style>
     h1.event_title {

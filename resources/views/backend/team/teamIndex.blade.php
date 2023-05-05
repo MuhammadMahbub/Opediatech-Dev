@@ -2,7 +2,10 @@
 @section('content')
 <div class="row">
     <div class="card-box table-responsive">
-        <h4 class="m-t-0 header-title">Show All Team member </h4>
+        <div class="d-flex justify-content-between">
+            <h4 class="m-t-0 header-title mr-0">Show All Team</h4>
+            <a href="{{ route('team.create') }}" class="btn btn-primary">Add Team</a>
+        </div>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item active" aria-current="page">team</li>

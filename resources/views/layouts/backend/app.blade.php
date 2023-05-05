@@ -10,7 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{ asset('backend') }}/assets/images/favicon.ico">
+        {{-- <link rel="shortcut icon" href="{{ asset('backend') }}/assets/images/favicon.ico"> --}}
+        <link rel="shortcut icon" href="{{ asset('frontend') }}/assets/favicon.ico">
 
         <!-- App css -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" >
@@ -41,7 +42,7 @@
 
                     <!-- LOGO -->
                     <div class="topbar-left">
-                        <a href="/" class="logo" target="_blank">
+                        <a href="/dashboard" class="logo">
                             <span>
                                 <img src="{{ asset('backend') }}/assets/images/logo.png" alt="" height="22">
                             </span>
@@ -85,74 +86,53 @@
                                     <li><a href="{{ route('email.index') }}">{{ __('Subscriber List') }}</a></li>
                                 </ul>
                             </li>
-                            
-                            {{-- <li>
-                                <a href="javascript: void(0);"><i class="fi-disc"></i><span> Service </span> <span class="menu-arrow"></span></a>
-                                <ul class="nav-second-level collapse" aria-expanded="false">
-                                    <li><a href="{{ route('service.create') }}">{{ __('Add Service') }}</a></li>
-                                    <li><a href="{{ route('service.index') }}">{{ __('List Service') }}</a></li>
-                                </ul>
-                            </li> --}}
-
-
 
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Services </span> <span class="menu-arrow"></span></a>
-                                <ul class="nav-second-level collapse" aria-expanded="false">
+                                <ul class="nav-second-level collapse {{ Request::routeIs(['serviceCategory*','service*']) ? 'in' : '' }}" aria-expanded="false">
                                     <li>
                                         <a href="javascript: void(0);"><span> Service Category </span> <span class="menu-arrow"></span></a>
                                         <ul class="nav-second-level collapse" aria-expanded="false">
-                                            <li><a href="{{ route('serviceCategory.create') }}">{{ __('Add Service Category') }}</a></li>
-                                            <li><a href="{{ route('serviceCategory.index') }}">{{ __('List Service Category') }}</a></li>
+                                            {{-- <li><a href="{{ route('serviceCategory.create') }}">{{ __('Add Service Category') }}</a></li> --}}
+                                            <li class="{{ Request::routeIs('portfserviceCategoryolio*') ? 'active' : '' }}"><a href="{{ route('serviceCategory.index') }}">{{ __('List Service Category') }}</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="javascript: void(0);"><span> Service </span> <span class="menu-arrow"></span></a>
                                         <ul class="nav-second-level collapse" aria-expanded="false">
-                                            <li><a href="{{ route('service.create') }}">{{ __('Add Service') }}</a></li>
-                                            <li><a href="{{ route('service.index') }}">{{ __('List Service') }}</a></li>
+                                            {{-- <li><a href="{{ route('service.create') }}">{{ __('Add Service') }}</a></li> --}}
+                                            <li class="{{ Request::routeIs('service*') ? 'active' : '' }}"><a href="{{ route('service.index') }}">{{ __('List Service') }}</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
 
-                            {{-- Team --}}
+                            {{-- service Details --}}
                              <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span>Service Details </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level collapse" aria-expanded="false">
-                                    <li><a href="{{ route('blogDetails.create') }}">{{ __('Add service Details') }}</a></li>
+                                    {{-- <li><a href="{{ route('blogDetails.create') }}">{{ __('Add service Details') }}</a></li> --}}
                                     <li><a href="{{ route('blogDetails.index') }}">{{ __('List service Details') }}</a></li>
                                 </ul>
                             </li>
-                            {{-- Team --}}
+                            {{-- service Details --}}
 
-
-
-
-                            {{-- <li>
-                                <a href="javascript: void(0);"><i class="fi-disc"></i><span> SubCategory </span> <span class="menu-arrow"></span></a>
-                                <ul class="nav-second-level collapse" aria-expanded="false">
-                                    <li><a href="{{ route('subcategory.create') }}">{{ __('Add SubCategory') }}</a></li>
-                                    <li><a href="{{ route('subcategory.index') }}">{{ __('List SubCategory') }}</a></li>
-                                </ul>
-
-                            </li> --}}
 
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Portfolios </span> <span class="menu-arrow"></span></a>
-                                <ul class="nav-second-level collapse" aria-expanded="false">
+                                <ul class="nav-second-level collapse {{ Request::routeIs(['category*','portfolio*']) ? 'in' : '' }}" aria-expanded="false">
                                     <li>
                                         <a href="javascript: void(0);"><span> Category </span> <span class="menu-arrow"></span></a>
                                         <ul class="nav-second-level collapse" aria-expanded="false">
-                                            <li><a href="{{ route('category.create') }}">{{ __('Add Category') }}</a></li>
-                                            <li><a href="{{ route('category.index') }}">{{ __('List Category') }}</a></li>
+                                            {{-- <li><a href="{{ route('category.create') }}">{{ __('Add Category') }}</a></li> --}}
+                                            <li class="{{ Request::routeIs('category*') ? 'active' : '' }}"><a href="{{ route('category.index') }}">{{ __('List Category') }}</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="javascript: void(0);"></i><span> Portfolio </span> <span class="menu-arrow"></span></a>
                                         <ul class="nav-second-level collapse" aria-expanded="false">
-                                            <li><a href="{{ route('portfolio.create') }}">{{ __('Add Portfolio') }}</a></li>
-                                            <li><a href="{{ route('portfolio.index') }}">{{ __('List Portfolio') }}</a></li>
+                                            {{-- <li><a href="{{ route('portfolio.create') }}">{{ __('Add Portfolio') }}</a></li> --}}
+                                            <li class="{{ Request::routeIs('portfolio*') ? 'active' : '' }}"><a href="{{ route('portfolio.index') }}">{{ __('List Portfolio') }}</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -162,7 +142,7 @@
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Training </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level collapse" aria-expanded="false">
-                                    <li><a href="{{ route('training.create') }}">{{ __('Add Training') }}</a></li>
+                                    {{-- <li><a href="{{ route('training.create') }}">{{ __('Add Training') }}</a></li> --}}
                                     <li><a href="{{ route('training.index') }}">{{ __('List Training') }}</a></li>
                                 </ul>
                             </li>
@@ -171,22 +151,22 @@
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Teams </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level collapse" aria-expanded="false">
-                                    <li><a href="{{ route('team.create') }}">{{ __('Add Team') }}</a></li>
+                                    {{-- <li><a href="{{ route('team.create') }}">{{ __('Add Team') }}</a></li> --}}
                                     <li><a href="{{ route('team.index') }}">{{ __('List Team') }}</a></li>
                                 </ul>
                             </li>
                             {{-- Team --}}
 
 
-                            {{-- Team --}}
+                            {{-- Blog --}}
                              <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Blog </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level collapse" aria-expanded="false">
-                                    <li><a href="{{ route('blog.create') }}">{{ __('Add Blog') }}</a></li>
+                                    {{-- <li><a href="{{ route('blog.create') }}">{{ __('Add Blog') }}</a></li> --}}
                                     <li><a href="{{ route('blog.index') }}">{{ __('List Blog') }}</a></li>
                                 </ul>
                             </li>
-                            {{-- Team --}}
+                            {{-- Blog --}}
 
 
                             {{-- Gallery --}}
@@ -201,6 +181,14 @@
                             </li>
                             {{-- Gallery --}}
 
+                            {{-- SEO Settings --}}
+                            <li>
+                                <a href="javascript: void(0);"><i class="fi-disc"></i><span> SEO Settings </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level collapse" aria-expanded="false">
+                                    <li><a href="{{ route('seo_index') }}">{{ __('SEO Settings') }}</a></li>
+                                </ul>
+                            </li>
+                            {{-- SEO Settings --}}
 
 
                         </ul>

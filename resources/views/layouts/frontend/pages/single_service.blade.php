@@ -1,4 +1,8 @@
-@include('layouts.frontend.inc.header',[$seo_title=$category->seo_title ?? '', $seo_description = $category->seo_description ?? ''])
+@include('layouts.frontend.inc.header',[
+$seo_title=SeoSettings()->service_page_seo_title.' | '.$category->category_fname.' | '.$category->category_lname, 
+$seo_description=SeoSettings()->service_page_seo_description, 
+$seo_keywords=SeoSettings()->service_page_seo_keywords 
+])
 
     <!-- banner and hero section start here -->
     <div class="banner__section">

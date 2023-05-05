@@ -1,4 +1,4 @@
-@include('layouts.frontend.inc.header',[$seo_title="We love delivering digital IT solutions services", $seo_description = "Professional digital IT solutions agency with a focus on modern web and software solutions. We offer web design and development, SEO services, graphics design."])
+@include('layouts.frontend.inc.header',[$seo_title=SeoSettings()->work_page_seo_title, $seo_description=SeoSettings()->work_page_seo_description, $seo_keywords=SeoSettings()->work_page_seo_keywords ])
     <!-- banner and hero section start here -->
     <div class="banner__section">
 

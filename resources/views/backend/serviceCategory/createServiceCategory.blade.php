@@ -50,21 +50,21 @@
 
 
                 <!-- SEO -->
-                <div class="form-group mb-3">
+                {{-- <div class="form-group mb-3">
                     <label>SEO TITLE</label>
                     <input type="text" name="seo_title" value="{{ old('seo_title') }}" placeholder="Seo Title" class="form-control mb-2">
                     @error('seo_title')
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror
                 </div>
-                {{-- SEO Description --}}
+                
                 <div class="form-group mb-3">
                     <label>SEO Description</label>
                     <textarea name="seo_description" class="form-control"  cols="30" rows="2" placeholder="SEO Description">{{ old('seo_description') }}</textarea>
                     @error('seo_description')
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror
-                </div>
+                </div> --}}
 
 
 

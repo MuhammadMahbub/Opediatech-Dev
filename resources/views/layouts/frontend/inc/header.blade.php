@@ -1,14 +1,14 @@
 <!Doctype html>
 <html lang="en">
 <head>
-    <title>Opedia Technologies Limited | Best Web and software Company</title>
+    <title>{{ $seo_title }} | Opediatech.com</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      
-    <meta name="title" content="Opedia Technologies Limited | Best Web and software Company">
-    <meta name="description" content="Our company provides businesses of all sizes with expert, affordable SEO, web, and software development services. We work out of Bangladesh and Singapore.">
-    <meta name="keywords" content="professional website design agency, web and software development, digital IT solutions, custom web software development ">
+    <meta name="title" content="{{ $seo_title ?? 'Opedia Technologies Limited | Best Web and software Company' }}">
+    <meta name="description" content="{{ $seo_description ?? 'Our company provides businesses of all sizes with expert, affordable SEO, web, and software development services. We work out of Bangladesh and Singapore.' }}">
+    <meta name="keywords" content="{{ $seo_keywords ?? 'professional website design agency, web and software development, digital IT solutions, custom web software development' }}">
     
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

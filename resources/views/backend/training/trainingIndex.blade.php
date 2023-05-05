@@ -4,7 +4,10 @@
 
 <div class="row">
     <div class="card-box table-responsive">
-        <h4 class="m-t-0 header-title">Show All Training </h4>
+        <div class="d-flex justify-content-between">
+            <h4 class="m-t-0 header-title mr-0">Show All Training</h4>
+            <a href="{{ route('training.create') }}" class="btn btn-primary">Add Training</a>
+        </div>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item active" aria-current="page">Training</li>

@@ -1,4 +1,4 @@
- @include('layouts.frontend.inc.header',[$seo_title="Find a Fulfilling Career - Opedia Technologies Limited", $seo_description = "Opedia offers software design & development, UI/UX with website design & development & more. Take a look at our career options & join our passionate team!"])
+ @include('layouts.frontend.inc.header',[$seo_title=SeoSettings()->career_page_seo_title, $seo_description=SeoSettings()->career_page_seo_description, $seo_keywords=SeoSettings()->career_page_seo_keywords ])
 
     <!-- banner and hero section start here -->
     <div class="banner__section">

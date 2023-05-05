@@ -1,4 +1,5 @@
 @extends('layouts.backend.app')
+
 @section('content')
 <div class="row">
    <div class="col-md-8 m-auto">
@@ -37,7 +38,6 @@
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror
                 </div>
-
 
                 <div class="form-group mb-3">
                     <label>Image</label>

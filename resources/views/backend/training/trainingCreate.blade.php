@@ -113,7 +113,7 @@
                     @enderror
                 </div>
                 <!-- SEO -->
-                <div class="form-group mb-3">
+                {{-- <div class="form-group mb-3">
                     <label>SEO TITLE</label>
                     <input type="text" name="seo_title"  placeholder="Seo Title" class="form-control mb-2">
                     @error('seo_title')
@@ -126,7 +126,7 @@
                     @error('seo_description')
                         <span class="text-danger font-weight-bold">{{ $message }}</span>
                     @enderror
-                </div>
+                </div> --}}
 
                 <div class="text-center" style="margin-top: 30px">
                     <input type="submit" class="btn btn-success" style="background: #02c0ce" value="Add Training">

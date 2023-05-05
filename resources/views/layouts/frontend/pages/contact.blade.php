@@ -1,4 +1,4 @@
-@include('layouts.frontend.inc.header',[$seo_title="Contact Us", $seo_description = "Take a look at our app design, web design & development projects to create your digital products. Find our amazing  work stories here!"])
+@include('layouts.frontend.inc.header',[$seo_title=SeoSettings()->contact_page_seo_title, $seo_description=SeoSettings()->contact_page_seo_description, $seo_keywords=SeoSettings()->contact_page_seo_keywords ])
     <!-- banner and hero section start here -->
     <div class="banner__section">
 
@@ -23,7 +23,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-10 m-auto">
                         <div class="title text-center">
-                            <h1><span>LOOKING FORWARD TO CONTACT US?</span></h1>
+                            <h1><span>Looking Forward To <br> Contact Us?</span></h1>
                             <span class="contact_title_span">If you need any digital product or product related idea, lets book a meeting.</span>
                         </div>
                     </div> 

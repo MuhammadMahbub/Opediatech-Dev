@@ -1,4 +1,4 @@
-    @include('layouts.frontend.inc.header',[$seo_title="Blog", $seo_description = "Opedia's blog"])
+    @include('layouts.frontend.inc.header',[$seo_title=SeoSettings()->blog_page_seo_title, $seo_description=SeoSettings()->blog_page_seo_description, $seo_keywords=SeoSettings()->blog_page_seo_keywords ])
     <!-- banner and hero section start here -->
     <div class="banner__section">
         @include('layouts.frontend.inc.menu')

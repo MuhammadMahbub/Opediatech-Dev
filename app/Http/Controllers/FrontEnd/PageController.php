@@ -39,9 +39,10 @@ class PageController extends Controller
     public function galleryDetails($slug)
     {
         // return $slug;
-        $subGallery = SubGallery::where('slug',$slug)->first();
+        $subGallery = SubGallery::where('slug', $slug)->first();
+        $gallery = Gallery::findOrFail($subGallery->gallery_id);
         $multipleImage = MultipleImage::where('sub_gallery_id', $subGallery->id)->get();
-        return view('layouts.frontend.pages.gallery-details', compact('subGallery','multipleImage'));       
+        return view('layouts.frontend.pages.gallery-details', compact('gallery','subGallery','multipleImage'));       
     }
 
 

@@ -26,7 +26,9 @@ use App\Http\Controllers\Admin\blogDetailsController;
 use App\Http\Controllers\Admin\EmailSubscribeController;
 use App\Http\Controllers\Admin\ServiceCategoryController;
 use App\Http\Controllers\FrontEnd\FrontEndHomeController;
+use App\Http\Controllers\SeoSettingController;
 use App\Http\Controllers\SubGalleryController;
+use Illuminate\Support\Facades\App;
 
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
@@ -138,8 +140,10 @@ Route::get('/gallery/details/{slug}', [PageController::class, 'galleryDetails'])
 // Route::get('/return/back', [PageController::class, 'returnBack'])->name('returnBack');
 
 
-Route::get('/{slug}', [FrontEndHomeController::class, 'SingleService'])->name('single_service');
+Route::get('/single/service/{slug}', [FrontEndHomeController::class, 'SingleService'])->name('single_service');
 
+Route::get('/seo/settings', [SeoSettingController::class, 'index'])->name('seo_index');
+Route::put('/seo/settings/update/{id}', [SeoSettingController::class, 'update'])->name('seo_update');
 
 // ================================== Frontend end ==============================
 
@@ -147,3 +151,9 @@ Route::get('/{slug}', [FrontEndHomeController::class, 'SingleService'])->name('s
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::any('{slug}', function()
+{
+    return abort(404);
+});
+

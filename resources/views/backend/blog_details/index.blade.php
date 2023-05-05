@@ -2,7 +2,10 @@
 @section('content')
 <div class="row">
     <div class="card-box table-responsive">
-        <h4 class="m-t-0 header-title">Show All Blog </h4>
+        <div class="d-flex justify-content-between">
+            <h4 class="m-t-0 header-title mr-0">Show All</h4>
+            <a href="{{ route('blogDetails.create') }}" class="btn btn-primary">Add Service Details</a>
+        </div>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item active" aria-current="page">Blog</li>

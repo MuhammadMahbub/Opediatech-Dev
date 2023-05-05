@@ -1,4 +1,4 @@
-@include('layouts.frontend.inc.header',[$seo_title="An digital service company enables IT for the future", $seo_description = "We adopted changes spontaneously as a result of the evolving digital service company revolution. We provide assistance in light of the remaining time. "])
+@include('layouts.frontend.inc.header',[$seo_title=SeoSettings()->gallery_page_seo_title, $seo_description=SeoSettings()->gallery_page_seo_description, $seo_keywords=SeoSettings()->gallery_page_seo_keywords ])
 
 <style>
     h3.event_title {
@@ -14,6 +14,13 @@
         background: linear-gradient(91.57deg, #0057FF 48.67%, #39C1DF 76.12%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .software__service__swiper .gallery_item{
+        padding: 0 !important;
+    }
+    .software__service__swiper .event_title{
+        padding-bottom: 14px !important;
     }
 
     
