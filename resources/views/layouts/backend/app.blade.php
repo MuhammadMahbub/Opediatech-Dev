@@ -90,20 +90,8 @@
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Services </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level collapse {{ Request::routeIs(['serviceCategory*','service*']) ? 'in' : '' }}" aria-expanded="false">
-                                    <li>
-                                        <a href="javascript: void(0);"><span> Service Category </span> <span class="menu-arrow"></span></a>
-                                        <ul class="nav-second-level collapse" aria-expanded="false">
-                                            {{-- <li><a href="{{ route('serviceCategory.create') }}">{{ __('Add Service Category') }}</a></li> --}}
-                                            <li class="{{ Request::routeIs('portfserviceCategoryolio*') ? 'active' : '' }}"><a href="{{ route('serviceCategory.index') }}">{{ __('List Service Category') }}</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="javascript: void(0);"><span> Service </span> <span class="menu-arrow"></span></a>
-                                        <ul class="nav-second-level collapse" aria-expanded="false">
-                                            {{-- <li><a href="{{ route('service.create') }}">{{ __('Add Service') }}</a></li> --}}
-                                            <li class="{{ Request::routeIs('service*') ? 'active' : '' }}"><a href="{{ route('service.index') }}">{{ __('List Service') }}</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{ route('serviceCategory.index') }}">{{ __('List Service Category') }}</a></li>
+                                    <li><a href="{{ route('service.index') }}">{{ __('List Service') }}</a></li>
                                 </ul>
                             </li>
 
@@ -121,20 +109,8 @@
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Portfolios </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level collapse {{ Request::routeIs(['category*','portfolio*']) ? 'in' : '' }}" aria-expanded="false">
-                                    <li>
-                                        <a href="javascript: void(0);"><span> Category </span> <span class="menu-arrow"></span></a>
-                                        <ul class="nav-second-level collapse" aria-expanded="false">
-                                            {{-- <li><a href="{{ route('category.create') }}">{{ __('Add Category') }}</a></li> --}}
-                                            <li class="{{ Request::routeIs('category*') ? 'active' : '' }}"><a href="{{ route('category.index') }}">{{ __('List Category') }}</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="javascript: void(0);"></i><span> Portfolio </span> <span class="menu-arrow"></span></a>
-                                        <ul class="nav-second-level collapse" aria-expanded="false">
-                                            {{-- <li><a href="{{ route('portfolio.create') }}">{{ __('Add Portfolio') }}</a></li> --}}
-                                            <li class="{{ Request::routeIs('portfolio*') ? 'active' : '' }}"><a href="{{ route('portfolio.index') }}">{{ __('List Portfolio') }}</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{ route('category.index') }}">{{ __('List Category') }}</a></li>
+                                    <li><a href="{{ route('portfolio.index') }}">{{ __('List Portfolio') }}</a></li>
                                 </ul>
                             </li>
 
@@ -174,9 +150,9 @@
                                 <a href="javascript: void(0);"><i class="fi-disc"></i><span> Gallery </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level collapse {{ Request::routeIs(['gallery*','sub_gallery*']) ? 'in' : '' }}" aria-expanded="false">
                                     {{-- <li><a href="{{ route('gallery.create') }}">{{ __('Add Gallery') }}</a></li> --}}
-                                    <li class="{{ Request::routeIs('gallery*') ? 'active' : '' }}"><a href="{{ route('gallery.index') }}">{{ __('List Gallery') }}</a></li>
+                                    <li><a href="{{ route('gallery.index') }}">{{ __('List Gallery') }}</a></li>
                                     {{-- <li><a href="{{ route('sub_gallery.create') }}">{{ __('Add Sub Gallery') }}</a></li> --}}
-                                    <li class="{{ Request::routeIs('sub_gallery*') ? 'active' : '' }}"><a href="{{ route('sub_gallery.index') }}">{{ __('List Sub Gallery') }}</a></li>
+                                    <li><a href="{{ route('sub_gallery.index') }}">{{ __('List Sub Gallery') }}</a></li>
                                 </ul>
                             </li>
                             {{-- Gallery --}}

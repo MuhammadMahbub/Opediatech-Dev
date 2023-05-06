@@ -49,6 +49,14 @@ class SeoSettingSeeder extends Seeder
             'contact_page_seo_title' => 'Contact Page',
             'contact_page_seo_description' => 'contact description',
             'contact_page_seo_keywords' => 'contact keywords',
+
+            'team_page_seo_title' => 'Team Page',
+            'team_page_seo_description' => 'team description',
+            'team_page_seo_keywords' => 'team keywords',
+
+            'training_page_seo_title' => 'Training Page',
+            'training_page_seo_description' => 'training description',
+            'training_page_seo_keywords' => 'training keywords',
         ]);
     }
 }

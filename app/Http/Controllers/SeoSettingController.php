@@ -22,8 +22,6 @@ class SeoSettingController extends Controller
             'service_page_seo_description' => 'required',
             'work_page_seo_title' => 'required',
             'work_page_seo_description' => 'required',
-            'agency_page_seo_title' => 'required',
-            'agency_page_seo_description' => 'required',
             'blog_page_seo_title' => 'required',
             'blog_page_seo_description' => 'required',
             'career_page_seo_title' => 'required',
@@ -67,6 +65,14 @@ class SeoSettingController extends Controller
         $seoSetting->contact_page_seo_title = $request->contact_page_seo_title;
         $seoSetting->contact_page_seo_description = $request->contact_page_seo_description;
         $seoSetting->contact_page_seo_keywords = $request->contact_page_seo_keywords;
+
+        $seoSetting->team_page_seo_title = $request->team_page_seo_title;
+        $seoSetting->team_page_seo_description = $request->team_page_seo_description;
+        $seoSetting->team_page_seo_keywords = $request->team_page_seo_keywords;
+
+        $seoSetting->training_page_seo_title = $request->training_page_seo_title;
+        $seoSetting->training_page_seo_description = $request->training_page_seo_description;
+        $seoSetting->training_page_seo_keywords = $request->training_page_seo_keywords;
 
         $seoSetting->save();
 

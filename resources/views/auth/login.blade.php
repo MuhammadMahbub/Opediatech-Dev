@@ -1,4 +1,4 @@
-@include('layouts.frontend.inc.header')
+@include('layouts.frontend.inc.header',[$seo_title='Login', $seo_description='', $seo_keywords='' ])
 <main>
     <div class="signIn-section">
         <div class="container">

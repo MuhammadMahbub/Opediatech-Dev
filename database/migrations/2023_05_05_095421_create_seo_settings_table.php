@@ -48,6 +48,14 @@ return new class extends Migration
             $table->text('contact_page_seo_description')->nullable();
             $table->string('contact_page_seo_keywords')->nullable();
 
+            $table->string('team_page_seo_title')->nullable();
+            $table->text('team_page_seo_description')->nullable();
+            $table->string('team_page_seo_keywords')->nullable();
+
+            $table->string('training_page_seo_title')->nullable();
+            $table->text('training_page_seo_description')->nullable();
+            $table->string('training_page_seo_keywords')->nullable();
+
             $table->timestamps();
         });
     }

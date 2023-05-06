@@ -57,19 +57,13 @@
 
                    <h3>Agency Page</h3>
                    <div class="form-group">
-                        <label>Agency Page Seo Title<span class="text-danger">*</span></label>
+                        <label>Agency Page Seo Title</label>
                         <input type="text" name="agency_page_seo_title" id="" class="form-control" value="{{$seo->agency_page_seo_title}}" placeholder="Example:Employee of the month">
                    </div>
-                   @error('agency_page_seo_title')
-                       <span class="text-danger">{{ $message }}</span>
-                   @enderror
                     <div class="form-group">
-                        <label>Agency Page Seo Description<span class="text-danger">*</span></label>
+                        <label>Agency Page Seo Description</label>
                         <textarea name="agency_page_seo_description" class="form-control" rows="4"> {{ $seo->agency_page_seo_description }} </textarea>
                    </div>
-                   @error('agency_page_seo_description')
-                       <span class="text-danger">{{ $message }}</span>
-                   @enderror
                     <div class="form-group">
                         <label>Agency Page Seo Keywords</label>
                         <input type="text" name="agency_page_seo_keywords" id="" class="form-control" value="{{$seo->agency_page_seo_keywords}}" placeholder="Example:Employee of the month">
@@ -173,6 +167,34 @@
                     <div class="form-group">
                         <label>Contact Page Seo Keywords</label>
                         <input type="text" name="contact_page_seo_keywords" id="" class="form-control" value="{{$seo->contact_page_seo_keywords}}" placeholder="Example:Employee of the month">
+                   </div>
+
+                   <h3>Team Page</h3>
+                   <div class="form-group">
+                        <label>Team Page Seo Title</label>
+                        <input type="text" name="team_page_seo_title" id="" class="form-control" value="{{$seo->team_page_seo_title}}" placeholder="Example:Employee of the month">
+                   </div>
+                    <div class="form-group">
+                        <label>Team Page Seo Description</label>
+                        <textarea name="team_page_seo_description" class="form-control" rows="4"> {{ $seo->team_page_seo_description }} </textarea>
+                   </div>
+                    <div class="form-group">
+                        <label>Team Page Seo Keywords</label>
+                        <input type="text" name="team_page_seo_keywords" id="" class="form-control" value="{{$seo->team_page_seo_keywords}}" placeholder="Example:Employee of the month">
+                   </div>
+
+                   <h3>Training Page</h3>
+                   <div class="form-group">
+                        <label>Training Page Seo Title</label>
+                        <input type="text" name="training_page_seo_title" id="" class="form-control" value="{{$seo->training_page_seo_title}}" placeholder="Example:Employee of the month">
+                   </div>
+                    <div class="form-group">
+                        <label>Training Page Seo Description</label>
+                        <textarea name="training_page_seo_description" class="form-control" rows="4"> {{ $seo->training_page_seo_description }} </textarea>
+                   </div>
+                    <div class="form-group">
+                        <label>Training Page Seo Keywords</label>
+                        <input type="text" name="training_page_seo_keywords" id="" class="form-control" value="{{$seo->training_page_seo_keywords}}" placeholder="Example:Employee of the month">
                    </div>
 
                     <center>
