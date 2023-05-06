@@ -17,11 +17,7 @@
                                 <a  class="work__page" href="{{ route('agency.index') }}"> <span>Di</span>ve In <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        {{-- <div class="col-md-5">
-                            <div class="giffy">
-                                <img src="https://opedia.mo.cloudinary.net/opediatech_images/work/work.gif" alt="image">
-                            </div>
-                        </div> --}}
+                        
                     </div>
                 </div>
             </div>
